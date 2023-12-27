@@ -1,0 +1,31 @@
+/* RandomComponent.css */
+.RandomComponent {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .RandomComponent h2 {
+    color: #007bff;
+  }
+  
+  .RandomComponent p {
+    font-size: 18px;
+  }
+  
+  .RandomComponent button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .RandomComponent button:hover {
+    background-color: #0056b3;
+  }
+.error-message{
+    color: red;
+}  

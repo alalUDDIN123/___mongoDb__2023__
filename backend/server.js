@@ -78,7 +78,7 @@ app.get('/user', (req, res) => {
 app.get('/random-number', (req, res) => {
   // Retrieve token from the cookie
   const token = req.cookies.token;
-  console.log('token',token)
+
 
   if (!token) {
     return res.status(401).json({ message: 'Unauthorized' });

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './RandomComponent.css';
+import { REACT_APP_SERVER_BACKEND_BASE_API } from './App';
 
 const RandomComponent = () => {
   const [randomNumber, setRandomNumber] = useState(null);
@@ -10,7 +11,7 @@ const RandomComponent = () => {
   useEffect(() => {
     const fetchRandomNumber = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/random-number', { withCredentials: true });
+        const response = await axios.get(`${REACT_APP_SERVER_BACKEND_BASE_API}/utils/expired-otp`, { withCredentials: true });
         setRandomNumber(response.data.randomNumber);
         setError(null); // Reset error if the request is successful
       } catch (error) {
